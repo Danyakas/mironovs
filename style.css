@@ -1,0 +1,16 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+}

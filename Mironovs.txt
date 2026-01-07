@@ -1,0 +1,26 @@
+
+Uzvārds: Mironovs
+Vārds: Daniels
+
+Projekts: Mācību tīmekļa lapa (index.html, style.css, script.js)
+
+Saite uz GitHub Pages (ielīmējiet pēc publicēšanas):
+https://<your-github-username>.github.io/mironovs/
+
+Instrukcijas publicēšanai GitHub un GitHub Pages:
+1. Iniciējiet repozitoriju (ja vēl nav):
+   git init
+2. Pievienojiet failus un veiciet commit:
+   git add .
+   git commit -m "Initial commit"
+3. Izveidojiet repozitoriju GitHub (izmantojot vietni) ar nosaukumu `mironovs`.
+4. Piesaistiet attālo repozitoriju un nosūtiet izmaiņas:
+   git remote add origin https://github.com/<your-github-username>/mironovs.git
+   git branch -M main
+   git push -u origin main
+5. GitHub: atveriet repozitoriju → Settings → Pages → izvēlieties zaru `main` un mapi `/ (root)` → Save.
+6. Pēc dažām minūtēm lapa būs pieejama iepriekš norādītajā adresē — ielīmējiet saiti šeit un iesniedziet failu.
+
+Piezīme: aizvietojiet `<your-github-username>` ar savu GitHub lietotājvārdu.
+
+Veiksmi!
