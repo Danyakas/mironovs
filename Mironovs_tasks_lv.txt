@@ -1,0 +1,42 @@
+Tīmekļa lapas interaktivitāte
+Sasniedzamie rezultāti
+1. Nosauc biežāk lietotos JavaScript notikumus.
+2. Raksturo notikumu nozīmi lietotāja mijiedarbībā.
+3. Sastāda JavaScript kodu notikumu apstrādei.
+4. Pamato izvēlēto notikumu izmantošanu savā projektā.
+Stundas uzdevumu veikšanai nepieciešamā informācija
+1. JavaScript Events – https://www.w3schools.com/js/js_events.asp
+2. HTML DOM Events – https://www.w3schools.com/js/js_htmldom_events.asp
+Uzdevumi
+1. uzdevums. Izpēte.
+Izlasi informāciju par dažādiem notikumu veidiem. *.txt dokumentā uzraksti
+1. vismaz 5 dažādus JavaScript notikumus (piemēram, click, mouseover, mouseout,
+input, change);
+2. īsu skaidrojumu, kad katrs notikums tiek izmantots;
+3. atzīmē 2 notikumus, kurus izmantosi savā projektā.
+2. uzdevums. Tīmekļa lapas papildināšana.
+Izmantojot iepriekšējā stundā veidotos failus:
+1. Pārliecinies, ka HTML lapā ir:
+a. vismaz viena poga;
+b. vismaz viens ievades lauks (input, textarea vai līdzīgs).
+2. JavaScript daļa (script.js) failā:
+a. piesaisti vismaz 2 dažādus notikumus, izmantojot addEventListener();
+b. katram notikumam jāizraisa redzama izmaiņa lapā, piemēram:
+i. teksta maiņa;
+ii. stila maiņa;
+iii. paziņojuma parādīšana;
+iv. elementa parādīšana / paslēpšana.
+Prasība: notikumiem jābūt jēgpilniem (ne tikai demonstrācijai, bet ar nozīmi lietotājam).
+3. uzdevums. Darba analīze.
+*.txt dokumentā uzraksti atbildes uz jautājumiem:
+1. Kurus notikumus Tu izmantoji?
+2. Kāpēc tie ir piemēroti Tavam produktam?
+3. Kā šie notikumi uzlabo lietotāja pieredzi?
+4. uzdevums. Darba iesniegšana.
+E-klasē iesniedz visus *.txt failus. GitHub
+Veic commit GitHub repozitorijā ar aprakstu, piemēram:
+Add user interaction using JS events
+Pārliecinies, ka:
+● projekts darbojas;
+● skolotājam ir pieejama GitHub saite.
+Uzmanību! Šo sagatavi izmantosim turpmākajās stundās līdz II semestra 1.PD!
