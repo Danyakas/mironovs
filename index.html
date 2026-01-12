@@ -1,31 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="lv">
 <head>
-    <meta charset="UTF-8">
-    <title>Mana tīmekļa lapa</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JS notikumu piemērs</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .hidden { display: none; }
+    .highlight { background: #fffbcc; border: 1px solid #ffd24d; padding: 8px; }
+    #preview { padding: 10px; border: 1px solid #ddd; min-height: 40px; }
+    #extra { margin-top: 10px; padding: 10px; border: 1px dashed #aaa; }
+    .btn { padding: 8px 12px; background: #2d89ef; color: white; border: none; cursor: pointer; border-radius: 4px; }
+    .btn:active { transform: translateY(1px); }
+  </style>
 </head>
 <body>
+  <h1>Tīmekļa lapas interaktivitāte — demonstrācija</h1>
 
-<header>
-    <h1>Vikipēdija</h1>
-</header>
+  <label for="userText">Ievadi tekstu (priekšskatījums reāllaikā):</label><br/>
+  <input id="userText" type="text" placeholder="Raksti šeit..." style="width: 100%; max-width: 480px; padding: 8px; margin-top: 6px;" />
 
-<main>
-    <p>
-        <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">
-            HTML
-        </a>
-        — iezīmēšanas valoda tīmekļa lapu veidošanai.
-    </p>
+  <h3>Priekšskatījums:</h3>
+  <div id="preview">Šeit tiks rādīts ievadītais teksts.</div>
 
-    <button>Nospied mani</button>
-</main>
+  <button id="toggleBtn" class="btn" style="margin-top:16px;">Rādīt papildu informāciju</button>
 
-<footer>
-    <p>© 2026</p>
-</footer>
+  <div id="extra" class="hidden">
+    <h4>Papildu informācija</h4>
+    <p>Šī sadaļa parādās / pazūd, nospiežot pogu. Var saturēt papildus rīkus vai palīdzību lietotājam.</p>
+  </div>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
