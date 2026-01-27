@@ -1,34 +1,34 @@
-// Piesaistām notikumus ar addEventListener()
-// 1) 'input' notikums — reāllaika priekšskatījums
-const input = document.getElementById('userText');
-const preview = document.getElementById('preview');
+// Demo: atlasām elementus
+const input = document.getElementById('sampleInput');
+const preview = document.getElementById('samplePreview');
+const addBtn = document.getElementById('addBtn');
+const removeBtn = document.getElementById('removeBtn');
+const list = document.getElementById('list');
+const codeBlock = document.getElementById('codeBlock');
 
+// Parādām kodu failā (lai skolotājs var redzēt/rediģēt)
+fetch('./script.js').then(r => r.text()).then(t => { codeBlock.textContent = t; }).catch(()=>{});
+
+// Input notikums — priekšskatījums reāllaikā
 input.addEventListener('input', (e) => {
-  const value = e.target.value.trim();
-  // Ja nav teksta — rāda noklusējuma ziņu
-  preview.textContent = value.length ? value : 'Šeit tiks rādīts ievadītais teksts.';
-  // Ja teksts ir garāks nekā 30 simboli — mainām stilu (vizuāla atsauce)
-  if (value.length > 30) {
-    preview.classList.add('highlight');
-  } else {
-    preview.classList.remove('highlight');
-  }
+  preview.textContent = e.target.value || 'Šeit tiks rādīts teksts.';
 });
 
-// 2) 'click' notikums — poga pārslēdz papildu informācijas sadaļu
-const toggleBtn = document.getElementById('toggleBtn');
-const extra = document.getElementById('extra');
-
-toggleBtn.addEventListener('click', () => {
-  const isHidden = extra.classList.toggle('hidden'); // pārslēdz redzamību
-  // Mainām pogas tekstu, lai lietotājam ir skaidrs stāvoklis
-  toggleBtn.textContent = isHidden ? 'Rādīt papildu informāciju' : 'Slēpt papildu informāciju';
+// Click — pievienot jaunu elementu
+addBtn.addEventListener('click', () => {
+  const value = input.value.trim();
+  if (!value) return alert('Ievadi tekstu!');
+  const li = document.createElement('li');
+  li.textContent = value;
+  list.appendChild(li);
+  input.value = '';
+  preview.textContent = 'Šeit tiks rādīts teksts.';
+  // atjaunojam kodu bloku (labs paraugs dinamiskai izmaiņai)
+  codeBlock.textContent = '// Pievienots elements: ' + li.textContent + '\n' + codeBlock.textContent;
 });
 
-// Papildus piemērs: focus/blur lai izceltu ievades lauku
-input.addEventListener('focus', () => {
-  input.style.outline = '2px solid #2d89ef';
-});
-input.addEventListener('blur', () => {
-  input.style.outline = '';
+// Noņemt pēdējo
+removeBtn.addEventListener('click', () => {
+  const last = list.lastElementChild;
+  if (last) last.remove();
 });

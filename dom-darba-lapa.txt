@@ -1,0 +1,74 @@
+Darbs ar DOM elementiem un dinamiska satura veidošana
+
+Vārds, uzvārds: ___________________________
+Datums: ___________________________
+
+1. uzdevums – DOM jēdziens (teorija)
+
+1.1. Kas ir DOM?
+Uzraksti skaidrojumu saviem vārdiem (1–2 teikumi):
+
+
+1.2. Kāpēc DOM ir nepieciešams dinamiskos tīmekļa produktos?
+
+
+2. uzdevums – DOM elementu atlase
+
+2.1. Nosauc vismaz 3 DOM elementu atlases metodes:
+
+1. 
+2. 
+3. 
+
+2.2. Kuru atlases metodi Tu šodien izmantoji visbiežāk? Kāpēc?
+
+
+3. uzdevums – Esoša HTML elementa maiņa ar JavaScript
+
+Ievieto koda fragmentu, kurā:
+
+1. tiek atlasīts HTML elements;
+2. tiek mainīts tā saturs;
+3. tiek mainīta vismaz viena stila īpašība.
+
+// Ievieto savu JavaScript kodu šeit
+
+3.1. Apraksti, kas notiek lapā, kad šis kods tiek izpildīts:
+
+
+
+4. uzdevums – Dinamiska HTML elementa izveide
+
+Ievieto koda fragmentu, kurā:
+
+1. ar JavaScript tiek izveidots jauns HTML elements;
+2. tas tiek pievienots lapai.
+
+// Ievieto savu JavaScript kodu šeit
+
+5. uzdevums – HTML elementa noņemšana
+
+Ievieto koda fragmentu, kurā iepriekš izveidotais elements tiek noņemts no lapas.
+
+// Ievieto savu JavaScript kodu šeit
+
+6. uzdevums – DOM nozīme dinamiskā produktā
+
+6.1. Raksturo DOM manipulāciju nozīmi dinamiskos tīmekļa produktos.(3–5 teikumi)
+
+
+7. uzdevums – Refleksija
+
+Ko Tu šajā stundā iemācījies jaunu par JavaScript un DOM?
+
+IESNIEGŠANA (obligāti)
+
+1. Saglabā šo darba lapu kā:
+
+   * `dom-darba-lapa.md`
+   VAI
+   * `dom-darba-lapa.txt`
+2. Pievieno failu savam GitHub repozitorijam.
+3. Veic commit ar aprakstu, piemēram:
+   `Add DOM worksheet with code examples`
+4. Pārliecinies, ka skolotājam ir pieejama GitHub saite (iesniedz to atkārtoti eklasē!).
