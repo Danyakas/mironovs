@@ -1,65 +1,63 @@
 Darbs ar DOM elementiem un dinamiska satura veidošana
 
-Vārds, uzvārds: ___________________________
-Datums: ___________________________
+Vārds, uzvārds: Daniels Mironovs
+Datums: 2026-01-27
 
 1. uzdevums – DOM jēdziens (teorija)
 
 1.1. Kas ir DOM?
-Uzraksti skaidrojumu saviem vārdiem (1–2 teikumi):
-
+DOM (Document Object Model) ir pārbūvēta tīmekļa lapas struktūra kā objektu koks, kas ļauj JavaScript piekļūt un mainīt HTML elementus, to saturu un stilus.
 
 1.2. Kāpēc DOM ir nepieciešams dinamiskos tīmekļa produktos?
-
+DOM ļauj dinamiski atjaunināt lapu bez pilnas pārlādes — mainīt tekstu, pievienot vai noņemt elementus, reaģēt uz lietotāja darbībām un uzlabot interaktivitāti.
 
 2. uzdevums – DOM elementu atlase
 
 2.1. Nosauc vismaz 3 DOM elementu atlases metodes:
 
-1. 
-2. 
-3. 
+1. document.getElementById('id')
+2. document.querySelector(selector)
+3. document.getElementsByClassName('class')
 
 2.2. Kuru atlases metodi Tu šodien izmantoji visbiežāk? Kāpēc?
-
+Es visbiežāk izmantoju document.querySelector(), jo tā ir elastīga, atbalsta CSS selektorus un ļauj atlasīt elementus pēc id, klases vai citām atribūtām ar vienu metodi.
 
 3. uzdevums – Esoša HTML elementa maiņa ar JavaScript
 
-Ievieto koda fragmentu, kurā:
-
-1. tiek atlasīts HTML elements;
-2. tiek mainīts tā saturs;
-3. tiek mainīta vismaz viena stila īpašība.
-
 // Ievieto savu JavaScript kodu šeit
+// Piemērs:
+const el = document.getElementById('samplePreview');
+el.textContent = 'Teksts ir atjaunināts ar JavaScript.';
+el.style.backgroundColor = '#fffbcc';
 
 3.1. Apraksti, kas notiek lapā, kad šis kods tiek izpildīts:
-
-
+Kods atlasīja elementu ar id "samplePreview", mainīja tā iekšējo tekstu uz jaunu ziņu un mainīja fona krāsu, tādējādi vizuāli norādot, ka saturs ir atjaunināts.
 
 4. uzdevums – Dinamiska HTML elementa izveide
 
-Ievieto koda fragmentu, kurā:
-
-1. ar JavaScript tiek izveidots jauns HTML elements;
-2. tas tiek pievienots lapai.
-
 // Ievieto savu JavaScript kodu šeit
+// Piemērs:
+const newLi = document.createElement('li');
+newLi.textContent = 'Jauns dinamiskais ieraksts';
+const ul = document.getElementById('list');
+ul.appendChild(newLi);
 
 5. uzdevums – HTML elementa noņemšana
 
-Ievieto koda fragmentu, kurā iepriekš izveidotais elements tiek noņemts no lapas.
-
 // Ievieto savu JavaScript kodu šeit
+// Piemērs:
+const lastItem = document.getElementById('list').lastElementChild;
+if (lastItem) lastItem.remove();
 
 6. uzdevums – DOM nozīme dinamiskā produktā
 
 6.1. Raksturo DOM manipulāciju nozīmi dinamiskos tīmekļa produktos.(3–5 teikumi)
-
+DOM manipulācijas ir pamats, lai veidotu interaktīvas tīmekļa lietotnes — tās ļauj reaģēt uz lietotāja ievadi, atjaunināt saturu reāllaikā, pārvaldīt formu validāciju un uzlabot lietotāja pieredzi, saglabājot ātru un plūstošu saskarni.
 
 7. uzdevums – Refleksija
 
 Ko Tu šajā stundā iemācījies jaunu par JavaScript un DOM?
+Es iemācījos, kā atlasīt elementus ar dažādām metodēm, mainīt to saturu un stilus, dinamiskā veidā pievienot un noņemt elementus, kā arī izmantot notikumus (piem., input un click) lai padarītu lapu interaktīvu.
 
 IESNIEGŠANA (obligāti)
 
