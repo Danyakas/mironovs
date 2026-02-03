@@ -7,13 +7,15 @@
   <style>
     body { font-family: Arial, sans-serif; padding: 20px; }
     textarea { width: 100%; height: 120px; }
-    pre { background:#f6f8fa; padding:10px; border:1px solid #e1e4e8; }
+    pre { background:#f6f8fa; padding:10px; border:1px solid #e1e4e8; white-space:pre-wrap; }
     .btn { padding:8px 12px; background:#2d89ef; color:#fff; border:none; border-radius:4px; cursor:pointer; }
+    .worksheet { margin-top:24px; padding:16px; border:1px solid #ddd; background:#fff; }
+    h2,h3 { margin-top:20px; }
   </style>
 </head>
 <body>
   <h1>DOM darba lapa — piemēra projekts</h1>
-  <p>Fails ar uzdevumu: <a href="./dom-darba-lapa.txt">dom-darba-lapa.txt</a></p>
+  <p>Fails ar uzdevumu: <a href="./dom-darba-lapa.txt">dom-darba-lapa.txt</a> • Atbildes: <a href="./dom-answers_lv.txt">dom-answers_lv.txt</a></p>
 
   <h2>Interaktīvais piemērs</h2>
   <label for="sampleInput">Ievadi tekstu:</label><br>
@@ -29,6 +31,45 @@
 
   <h2>Kods</h2>
   <pre id="codeBlock">// script.js</pre>
+
+  <section class="worksheet" id="worksheet">
+    <h2>Darba lapa: Darbs ar DOM elementiem un dinamiska satura veidošana</h2>
+    <p>Vārds, uzvārds: ___________________________<br/>Datums: ___________________________</p>
+
+    <h3>1. uzdevums – DOM jēdziens (teorija)</h3>
+    <p>1.1. Kas ir DOM?<br/>Uzraksti skaidrojumu saviem vārdiem (1–2 teikumi):</p>
+    <p>1.2. Kāpēc DOM ir nepieciešams dinamiskos tīmekļa produktos?</p>
+
+    <h3>2. uzdevums – DOM elementu atlase</h3>
+    <p>2.1. Nosauc vismaz 3 DOM elementu atlases metodes:<br/>
+    1. document.getElementById('id')<br/>
+    2. document.querySelector(selector)<br/>
+    3. document.getElementsByClassName('class')</p>
+    <p>2.2. Kuru atlases metodi Tu šodien izmantoji visbiežāk? Kāpēc?</p>
+
+    <h3>3. uzdevums – Esoša HTML elementa maiņa ar JavaScript</h3>
+    <p>Ievieto koda fragmentu, kurā:<br/>1. tiek atlasīts HTML elements;<br/>2. tiek mainīts tā saturs;<br/>3. tiek mainīta vismaz viena stila īpašība.</p>
+
+    <h3>4. uzdevums – Dinamiska HTML elementa izveide</h3>
+    <p>Ievieto koda fragmentu, kurā:<br/>1. ar JavaScript tiek izveidots jauns HTML elements;<br/>2. tas tiek pievienots lapai.</p>
+
+    <h3>5. uzdevums – HTML elementa noņemšana</h3>
+    <p>Ievieto koda fragmentu, kurā iepriekš izveidotais elements tiek noņemts no lapas.</p>
+
+    <h3>6. uzdevums – DOM nozīme dinamiskā produktā</h3>
+    <p>6.1. Raksturo DOM manipulāciju nozīmi dinamiskos tīmekļa produktos.(3–5 teikumi)</p>
+
+    <h3>7. uzdevums – Refleksija</h3>
+    <p>Ko Tu šajā stundā iemācījies jaunu par JavaScript un DOM?</p>
+
+    <h3>IESNIEGŠANA (obligāti)</h3>
+    <ol>
+      <li>Saglabā šo darba lapu kā dom-darba-lapa.md VAI dom-darba-lapa.txt</li>
+      <li>Pievieno failu savam GitHub repozitorijam.</li>
+      <li>Veic commit ar aprakstu, piemēram: Add DOM worksheet with code examples</li>
+      <li>Pārliecinies, ka skolotājam ir pieejama GitHub saite (iesniedz to atkārtoti eklasē!).</li>
+    </ol>
+  </section>
 
   <script src="script.js"></script>
 </body>
