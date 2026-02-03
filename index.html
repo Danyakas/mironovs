@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimal Landing Page</title>
+    <title>Interactive Example</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        #toggleBtn { margin: 20px 0; }
+        #extraSection { display: none; margin-top: 10px; }
+    </style>
+    <script>
+        function toggleExtraSection() {
+            var extraSection = document.getElementById('extraSection');
+            if (extraSection.style.display === 'block') {
+                extraSection.style.display = 'none';
+            } else {
+                extraSection.style.display = 'block';
+            }
+        }
+    </script>
 </head>
 <body>
-    <h1>Welcome to the Minimal Landing Page</h1>
-    <p>Please download the files for editing:</p>
-    <ul>
-        <li><a href="dom-darba-lapa.txt">Download dom-darba-lapa.txt</a></li>
-        <li><a href="dom-answers_lv.txt">Download dom-answers_lv.txt</a></li>
-    </ul>
+    <h1>Interactive Example</h1>
+    <div>
+        <label for="userText">User Input:</label>
+        <input type="text" id="userText" placeholder="Type something...">
+    </div>
+    <button id="toggleBtn" onclick="toggleExtraSection()">Toggle Extra Section</button>
+    <div id="extraSection">
+        <h2>Extra Section</h2>
+        <p>This section can be toggled on and off.</p>
+    </div>
 </body>
 </html>
